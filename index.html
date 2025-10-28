@@ -1,156 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Portfolio</title>
-  </head>
-  <body class="dark">
-    <header class="header">
-      <div class="switches">
-        <div id="toggle-theme" class="toggle-theme">
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Portfolio</title>
+</head>
+
+<body class="dark">
+  <header class="header">
+    <div class="switches">
+      <div id="toggle-theme" class="toggle-theme">
+        <img id="toggle-icon" src="assets/icons/moon.png" alt="icon theme" class="toggle-theme_icon" />
+        <p id="toggle-text" class="toggle-theme_text">Dark mode</p>
       </div>
-          <img
-            id="toggle-icon"
-            src="assets/icons/moon.png"
-            alt="icon theme"
-            class="toggle-theme_icon"
-          />
-          <p id="toggle-text" class="toggle-theme_text">Dark mode</p>
-        </div>
-        <div id="flags" class="flags">
-          <div class="flags__item" data-languaje="es">
-            <img src="assets/icons/españa.svg" alt="">
-          </div>
-          <div class="flags__item" data-languaje="en">
-            <img src="assets/icons/estados-unidos.svg" alt="">
-        </div>
+    </div>
+    <div id="flags" class="flags">
+      <div class="flags__item" data-languaje="es">
+        <img src="assets/icons/españa.svg" alt="">
       </div>
-      <div id="toggle-colors" class="colors">
-        <div
-          data-color="hsl(214, 84%, 56%)"
-          class="colors_item colors_item--blue"
-        ></div>
-        <div
-          data-color="hsl(150, 84%, 56%)"
-          class="colors_item colors_item--green"
-        ></div>
-        <div
-          data-color="hsl(276, 84%, 56%)"
-          class="colors_item colors_item--purple"
-        ></div>
-        <div
-          data-color="hsl(46, 84%, 56%)"
-          class="colors_item colors_item--orange"
-        ></div>
+      <div class="flags__item" data-languaje="en">
+        <img src="assets/icons/estados-unidos.svg" alt="">
       </div>
-    </header>
-    <main class="main">
-      <section class="column column--left">
-        <article class="card card--profile">
-          <div class="card__image-container">
-            <img src="/portfolio/assets/images/perfil.jpeg" alt="Profile Picture" />
+    </div>
+    <div id="toggle-colors" class="colors">
+      <div data-color="hsl(214, 84%, 56%)" class="colors_item colors_item--blue"></div>
+      <div data-color="hsl(150, 84%, 56%)" class="colors_item colors_item--green"></div>
+      <div data-color="hsl(276, 84%, 56%)" class="colors_item colors_item--purple"></div>
+      <div data-color="hsl(46, 84%, 56%)" class="colors_item colors_item--orange"></div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="column column--left">
+      <article class="card card--profile">
+        <div class="card__image-container">
+          <img src="assets/images/perfil.jpeg" alt="Profile Picture" />
+        </div>
+        <div class="card__header">
+          <h2 class="card__title">Victor Desings</h2>
+          <p class="card__subtitle">Front end developer</p>
+        </div>
+        <div class="card__body">
+          <div class="card__link">
+            <i class="fas fa-envelope icon"></i>
+            <a href="mailto:manuelmundial1205@gmail.com">vikomundial1205@gmail.com</a>
           </div>
-          <div class="card__header">
-            <h2 class="card__title">Victor Desings</h2>
-            <p class="card__subtitle">Front end developer</p>
+          <div class="card__link">
+            <i class="fas fa-phone-alt icon"></i>
+            <a href="tel:+573208181138">602-4235689</a>
           </div>
-          <div class="card__body">
-            <div class="card__link">
-              <i class="fas fa-envelope icon"></i>
-              <a href="mailto:manuelmundial1205@gmail.com"
-                >manuelmundial1205@gmail.com</a
-              >
-            </div>
-            <div class="card__link">
-              <i class="fas fa-phone-alt icon"></i>
-              <a href="tel:+573208181138">602-4235689</a>
-            </div>
-            <div class="card__link">
-              <i class="fab fa-github icon"></i>
-              <a href="https://github.com/victormatabanchoy"
-                >victormatabanchoy</a
-              >
-            </div>
-            <div class="card__link">
-              <i class="fab fa-facebook icon"></i>
-              <a
-                href="https://www.facebook.com/profile.php?id=61563690906192&locale=es_LA"
-                >viko sf</a
-              >
-            </div>
-            <p class="card__text">
-              Con más de un año de experiencia en el desarrollo web, he
-              trabajado en una variedad de proyectos que abarcan desde la
-              creación de sitios web interactivos hasta la integración de
-              servicios y APIs. He desarrollado competencias en tecnologías como
-              HTML, CSS, JavaScript, y frameworks modernos como React y Next.js.
-              Mi enfoque se centra en crear aplicaciones web escalables y
-              optimizadas, con una sólida base en buenas prácticas de desarrollo
-              y experiencia de usuario.
+          <div class="card__link">
+            <i class="fab fa-github icon"></i>
+            <a href="https://github.com/victormatabanchoy">victormatabanchoy</a>
+          </div>
+          <div class="card__link">
+            <i class="fab fa-facebook icon"></i>
+            <a href="https://www.facebook.com/profile.php?id=61563690906192&locale=es_LA">viko sf</a>
+          </div>
+          <p class="card__text">
+            Con más de un año de experiencia en el desarrollo web, he
+            trabajado en una variedad de proyectos que abarcan desde la
+            creación de sitios web interactivos hasta la integración de
+            servicios y APIs. He desarrollado competencias en tecnologías como
+            HTML, CSS, JavaScript, y frameworks modernos como React y Next.js.
+            Mi enfoque se centra en crear aplicaciones web escalables y
+            optimizadas, con una sólida base en buenas prácticas de desarrollo
+            y experiencia de usuario.
+          </p>
+        </div>
+      </article>
+      <article class="card card--experience">
+        <h2 class="card__title">Experience</h2>
+        <div class="experience">
+          <img src="assets/images/logo-3.png" alt="logo" class="experience___image">
+          <div class="experience__info">
+            <p class="experience__time">
+              enero 2021 - Current
             </p>
+            <h3 class="experience__job">Integración con el Backend y APIs</h3>
+            <p class="experience__description">Una parte crucial
+              del trabajo es la integración de la interfaz de
+              usuario con los datos del servidor. Utilizamos
+              llamadas asíncronas (AJAX y Fetch API) para
+              comunicarnos con las APIs del Backend, garantizando
+              que la información se muestre sin interrupciones ni
+              recargas de página. </p>
           </div>
-        </article>
-        <article class="card card--experience">
-          <h2 class="card__title">Experience</h2>
-          <div class="experience">
-            <img src="assets/images/logo-3.png" alt="logo" class="experience___image">
-            <div class="experience__info">
-              <p class="experience__time">
-                enero 2023 - Current
-              </p>
-              <h3 class="experience__job">Front End Developer</h3>
-              <p class="experience__description">Trabajar como front-end developer consiste en convertir diseños visuales en páginas web funcionales
-                 utilizando tecnologías como HTML, CSS y JavaScript. </p>
-            </div>
+        </div>
+        <div class="experience">
+          <img src="assets/images/logo-3.png" alt="logo" class="experience___image">
+          <div class="experience__info">
+            <p class="experience__time">
+              marzo 2022 - Current
+            </p>
+            <h3 class="experience__job">Desarrollo de Experiencia de Usuario (UX/UI)</h3>
+            <p class="experience__description">Trabajar como front-end developer consiste
+              en convertir diseños visuales
+              en páginas web funcionales
+              utilizando tecnologías como HTML, CSS y JavaScript. </p>
           </div>
-          <div class="experience">
-            <img src="assets/images/logo-3.png" alt="logo" class="experience___image">
-            <div class="experience__info">
-              <p class="experience__time">
-                enero 2023 - Current
-              </p>
-              <h3 class="experience__job">Front End Developer</h3>
-              <p class="experience__description">Trabajar como front-end developer consiste en convertir diseños visuales en páginas web funcionales
-                 utilizando tecnologías como HTML, CSS y JavaScript. </p>
-            </div>
+        </div>
+        <div class="experience">
+          <img src="assets/images/logo-3.png" alt="logo" class="experience___image">
+          <div class="experience__info">
+            <p class="experience__time">
+              octbre 2025 - Current
+            </p>
+            <h3 class="experience__job">Front End Developer</h3>
+            <p class="experience__description">El rol de Front-end
+              va más allá de la codificación; también implica la
+              implementación de una experiencia de usuario (UX)
+              excepcional. Nos enfocamos en la usabilidad,
+              asegurando que cada interacción sea intuitiva,
+              y en la accesibilidad, haciendo el producto usable
+              para personas con diversas capacidades. </p>
           </div>
-          <div class="experience">
-            <img src="assets/images/logo-3.png" alt="logo" class="experience___image">
-            <div class="experience__info">
-              <p class="experience__time">
-                enero 2023 - Current
-              </p>
-              <h3 class="experience__job">Front End Developer</h3>
-              <p class="experience__description">Trabajar como front-end developer consiste en convertir diseños visuales en páginas web funcionales
-                 utilizando tecnologías como HTML, CSS y JavaScript. </p>
-            </div>  
-          </div>  
-        </article>
-        <article class="card card--hobbies">
-          <h2 class="card__title">Hobbies</h2>
-          <div class="card__image-container">
-            <img src="assets/images/hobbie-football.jpg" alt="logo bicicleta">
-          </div>
-          <h3 class="hobbie__title">Football</h3>
-          <p>Mi hobby es el fútbol, ya que disfruto tanto de jugarlo como de seguir 
-            los partidos de mis equipos favoritos. Me encanta la emoción del juego, 
-            el trabajo en equipo y la estrategia que implica cada encuentro. Además, 
-            ver los grandes torneos es una experiencia apasionante que siempre me motiva.</p>
-        </article>
-      </section>
-      <section class="column column--right">
-        <article class="card">
-          <h2 class="card__title">Front End</h2>
-          <small>Años de experiencia</small>
-          <div class="skills">
+        </div>
+      </article>
+    </section>
+    <section class="column column--right">
+      <article class="card">
+        <h2 class="card__title">Front End</h2>
+        <small>Años de experiencia</small>
+        <div class="skills">
           <div class="sjills__header">
             <span class="skills__star-level">0 -</span>
             <span class="skills__star-level">1</span>
@@ -170,122 +145,146 @@
             </div>
           </div>
         </div>
-        </article>
-        <article class="card">
-          <h2 class="card__title">Design</h2>
-          <div class="skills">
-            <div class="skills__item">
-              <p class="skills__tech">Photoshop</p>
-              <div class="skills__bar skills__bar--80"></div>
-            </div>
-            <div class="skills__item">
-              <p class="skills__tech">Figma</p>
-              <div class="skills__bar skills__bar--70"></div>
-            </div>
-            <div class="skills__item">
-              <p class="skills__tech">WordPress</p>
-              <div class="skills__bar skills__bar--60"></div>
-            </div>
+      </article>
+      <article class="card">
+        <h2 class="card__title">Design</h2>
+        <div class="skills">
+          <div class="skills__item">
+            <p class="skills__tech">Photoshop</p>
+            <div class="skills__bar skills__bar--80"></div>
           </div>
-        </article>
-             <!-- New Multimedia card -->
-             <article class="card">
-              <h2 class="card__title">Multimedia</h2>
-              <div class="skills">
-                <div class="skills__item">
-                  <p class="skills__tech">Canva</p>
-                  <div class="skills__bar skills__bar--70"></div>
-                </div>
-                <div class="skills__item">
-                  <p class="skills__tech">Prezi</p>
-                  <div class="skills__bar skills__bar--60"></div>
-                </div>
-              </div>
-            </article>
-            <article class="card card--project">
-              <div class="card__image-container">
-                <img src="assets/images/logo_project.jpg" alt="img project" class="card__image">
-              </div>
-              <div class="project">
-                <div class = "project__tags">
-                  <span class="project__tag">#HTML</span>
-                  <span class="project__tag">#CSS</span>
-                  <span class="project__tag">#HTML</span>
-                  <span class="project__tag">#Responsive</span>
-                </div>
-                <h2 class="card__title">Landing page</h2>
-                <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor consectetur 
-                  quibusdam temporibus repellendus commodi! Sequi provident assumenda recusandae veniam cum itaque.
-                   Ab atque ut</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Eos necessitatibus doloremque ab dicta! Repellat modi ducimus autem maiores? Officiis quam itaque
-                     .</p>
-
-                  <div class="buttons">
-                    <a href="#" class="button button--primary">Demo</a>
-                    <a href="#" class="button button--ghost">Code</a>
-                  </div>   
-              </div>
-              
-            </article>
-          </article>
-          <article class="card card--project">
-            <div class="card__image-container">
-              <img src="assets/images/desarriollador.jpeg" alt="img project" class="card__image">
-            </div>
-            <div class="project">
-              <div class = "project__tags">
-                <span class="project__tag">#HTML</span>
-                <span class="project__tag">#CSS</span>
-                <span class="project__tag">#HTML</span>
-                <span class="project__tag">#Responsive</span>
-              </div>
-              <h2 class="card__title">Landing page</h2>
-              <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor consectetur 
-                quibusdam temporibus repellendus commodi! Sequi provident assumenda recusandae veniam cum itaque.
-                 Ab atque ut</p>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                  Eos necessitatibus doloremque ab dicta! Repellat modi ducimus autem maiores? Officiis quam itaque
-                   .</p>
-
-                <div class="buttons">
-                  <a href="#" class="button button--primary">Demo</a>
-                  <a href="#" class="button button--ghost">Code</a>
-                </div>   
-            </div>
-            
-          </article>
-        </article>
-        <article class="card card--project">
-          <div class="card__image-container">
-            <img src="assets/images/desarrollador2.jpeg" alt="img project" class="card__image">
+          <div class="skills__item">
+            <p class="skills__tech">Figma</p>
+            <div class="skills__bar skills__bar--70"></div>
           </div>
-          <div class="project">
-            <div class = "project__tags">
-              <span class="project__tag">#HTML</span>
-              <span class="project__tag">#CSS</span>
-              <span class="project__tag">#HTML</span>
-              <span class="project__tag">#Responsive</span>
-            </div>
-            <h2 class="card__title">Landing page</h2>
-            <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor consectetur 
-              quibusdam temporibus repellendus commodi! Sequi provident assumenda recusandae veniam cum itaque.
-               Ab atque ut</p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Eos necessitatibus doloremque ab dicta! Repellat modi ducimus autem maiores? Officiis quam itaque
-                 .</p>
-
-              <div class="buttons">
-                <a href="#" class="button button--primary">Demo</a>
-                <a href="#" class="button button--ghost">Code</a>
-              </div>   
+          <div class="skills__item">
+            <p class="skills__tech">WordPress</p>
+            <div class="skills__bar skills__bar--60"></div>
           </div>
-          
-        </article>
-          </section>
-        </main>
-    </main>
+        </div>
+      </article>
+      <!-- New Multimedia card -->
+      <article class="card">
+        <h2 class="card__title">Multimedia</h2>
+        <div class="skills">
+          <div class="skills__item">
+            <p class="skills__tech">Canva</p>
+            <div class="skills__bar skills__bar--70"></div>
+          </div>
+          <div class="skills__item">
+            <p class="skills__tech">Prezi</p>
+            <div class="skills__bar skills__bar--60"></div>
+          </div>
+        </div>
+      </article>
+      <article class="card card--project">
+        <div class="card__image-container">
+          <img src="assets/images/logo_project.jpg" alt="img project" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#Responsive</span>
+          </div>
+          <h2 class="card__title">Landing page</h2>
+          <p class="card__text">Hemos diseñado y desarrollado una aplicación móvil
+            completa que conecta a usuarios con entrenadores personales certificados.
+            La app permite la creación de rutinas dinámicas, seguimiento de progreso en
+            tiempo real y videollamadas integradas para sesiones virtuales.</p>
+          <p>Nuestro enfoque en la usabilidad garantiza una experiencia fluida
+            desde la suscripción hasta la finalización del entrenamiento.</p>
 
-    <script src="js/scripts.js"></script>
-  </body>
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Code</a>
+          </div>
+        </div>
+
+      </article>
+      </article>
+      <article class="card card--project">
+        <div class="card__image-container">
+          <img src="assets/images/desarriollador.jpeg" alt="img project" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#Responsive</span>
+          </div>
+          <h2 class="card__title">Landing page</h2>
+          <p class="card__text">Desarrollamos una plataforma de comercio
+            electrónico Business-to-Business (B2B) enfocada en la gestión
+            de grandes volúmenes de pedidos y precios escalonados. El sistema
+            cuenta con una arquitectura de microservicios robusta para asegurar
+            una alta disponibilidad y la capacidad de manejar picos de tráfico.</p>
+          <p>Una característica central es la integración nativa con los sistemas ERP
+            y de inventario del cliente, permitiendo la sincronización automática de
+            stock y la gestión de catálogos personalizados para cada uno de sus clientes mayoristas.
+            .</p>
+
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Code</a>
+          </div>
+        </div>
+
+      </article>
+      </article>
+      <article class="card card--project">
+        <div class="card__image-container">
+          <img src="assets/images/desarrollador2.jpeg" alt="img project" class="card__image">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#CSS</span>
+            <span class="project__tag">#HTML</span>
+            <span class="project__tag">#Responsive</span>
+          </div>
+          <h2 class="card__title">Landing page</h2>
+          <p class="card__text">Creamos un juego web interactivo diseñado
+            para enseñar los fundamentos de la inversión en bolsa a través
+            de la gamificación. Los usuarios gestionan un portafolio virtual,
+            toman decisiones de compra/venta y compiten en ligas sin riesgo 
+            financiero real.</p>
+          <p>Utilizamos la API de datos bursátiles en tiempo real para simular condiciones
+            de mercado realistas dentro del entorno del juego. Esto lo convierte en una herramienta
+            educativa poderosa y altamente atractiva para nuevos inversores.
+            .</p>
+
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">Code</a>
+          </div>
+        </div>
+      </article>
+      <article class="card card--hobbies">
+        <h2 class="card__title">Hobbies</h2>
+        <div class="card__image-container">
+          <img src="assets/images/hobbie-football.jpg" alt="logo bicicleta">
+        </div>
+        <h3 class="hobbie__title">Football</h3>
+        <p>Mi hobby es el fútbol, ya que disfruto tanto de jugarlo
+          como de seguir los partidos de mis equipos favoritos.
+          Me encanta la emoción del juego, el trabajo en equipo
+          y la estrategia que implica cada encuentro. Además, ver
+          los grandes torneos es una experiencia apasionante que
+          siempre me motiva. Jugarlo me ayuda a mantenerme activo,
+          mejorar mi coordinación y liberar el estrés de la semana.
+          Es un deporte que fomenta valores esenciales como la disciplina,
+          la perseverancia y el respeto por las reglas. El ambiente en el
+          estadio o al reunirme con amigos para ver un partido es incomparable,
+          creando un sentido de comunidad único.</p>
+      </article>
+    </section>
+  </main>
+  </main>
+
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>
